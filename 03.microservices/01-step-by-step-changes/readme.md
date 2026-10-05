@@ -337,9 +337,18 @@ server.port=8888
 Step 05 - Installing Git and Creating Local Git Repository
 
 ```
+mkdir git-localconfig-repo
+
 git init
+
+open these git-localconfig-repo in visual studio and create new file limits.services.properties
+and save the below value.
+limits-services.minimum=2
+limits-services.maximum=999
+
+dir limits.services.properties
 git add *
-git commit -m "First commit"
+git commit -m "adding limits-services.properties"
 ```
 
 #### /git-localconfig-repo/limits-service.properties New
